@@ -1,7 +1,6 @@
 setuptools>=69.0.2
 wheel>=0.42.0
 packaging>=23.2
-distutils-precedence>=0.2.0
 streamlit
 speech_recognition
 audio-recorder-streamlit
