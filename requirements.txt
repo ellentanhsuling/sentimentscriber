@@ -2,7 +2,7 @@ setuptools>=69.0.2
 wheel>=0.42.0
 packaging>=23.2
 streamlit
-speech_recognition
+SpeechRecognition
 audio-recorder-streamlit
 transformers
 numpy
