@@ -1,0 +1,7 @@
+streamlit==1.28.1
+audio-recorder-streamlit==0.0.8
+SpeechRecognition==3.10.0
+numpy==1.24.3
+transformers==4.34.1
+torch==2.1.0
+wave==0.0.2
