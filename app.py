@@ -45,11 +45,13 @@ def main():
         if st.session_state.is_recording:
             status_placeholder.markdown("🔴 **Recording in Progress**")
             audio_bytes = audio_recorder(
-                pause_threshold=2**32,  # Very large number to prevent auto-stop
+                pause_threshold=60.0,  # Set to 60 seconds
+                sample_rate=44100,
                 recording_color="#e74c3c",
                 neutral_color="#95a5a6",
                 icon_name="microphone",
-                icon_size="2x"
+                icon_size="2x",
+                energy_threshold=0.01  # Lower threshold for better sensitivity
             )
             
             if audio_bytes:
